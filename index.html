@@ -25,13 +25,14 @@
             <div class="nav-right">
                 <p>NEWSLETTER</p>
                 <p>ACCOUNT</p>
-                <p>CART (<a class="clicksBtn">0</a>)</p>
+                <p>CART <span class="cartInput"></span></p>
             </div>
         </nav>
         <div class="main-content">
             <h1>Alcohol for the modern drinker</h1>
             <p>Light and refreshing flavors made with real, clean ingredients you can feel good about. Just pour, sip, and enjoy. </p>
-            <button class="main-content_button">SHOP ALL</button>
+            <a href="#products" class="main-content_button">SHOP ALL</a>
+            <!--<button class="main-content_button">SHOP ALL</button>-->
         </div>
     </div>
 
@@ -51,7 +52,7 @@
                     <a href="#"><li>OUR STORY</li></a>
                     <a href="#"><li>NEWSLETTER</li></a>
                     <a href="#"><li>ACCOUNT</li></a>
-                    <a href="#"><li>CART <a class="clicksBtn">0</a></li></a>
+                    <a href="#"><li>CART <span class="cartInputMobile"></span></li></a>
                 </ul>
             </div>
         </div>
@@ -59,7 +60,8 @@
             <div class="mobile-content">
                 <h1>Alcohol for the modern drinker</h1>
                 <p>Light and refreshing flavors made with real, clean ingredients you can feel good about. Just pour, sip, and enjoy. </p>
-                <button class="main-content_button">SHOP ALL</button>
+                <a href="#products" class="main-content_button">SHOP ALL</a>
+                <!--<button class="main-content_button">SHOP ALL</button>-->
             </div>
         </div>
     </div>
@@ -115,7 +117,7 @@
     <div class="products" id="products">
         <div class="products_content">
             <h2>Made with natural ingredients, nothing fake</h2>
-            <p>SHOP ALL FLAVORS</p>
+            <button type="button" class="products_btn">SHOP ALL FLAVORS</button>
         </div>
         <div class="products_choice">
             <div class="product_item">
@@ -142,7 +144,7 @@
     <div class="products-mobile">
         <div class="products_content">
             <h2>Made with natural ingredients, nothing fake</h2>
-            <p>SHOP ALL FLAVORS</p>
+            <button type="button" class="products_btn_mobile">SHOP ALL FLAVORS</button>
         </div>
         <div class="products_choice-mobile">
             <div class="product_item-mobile">
@@ -152,7 +154,7 @@
                 <div class="product_item-mobile_content">
                     <h4>The Sampler Kit</h4>
                     <p>Try a variety of Haus flavors with our customizable four-bottle kit. Each bottle serves 2-3 drinks.</p>
-                    <button type="button" class="product_item_btn">SHOP NOW</button>
+                    <button type="button" class="product_item_btn_mobile">SHOP NOW</button>
                 </div>
             </div>
             <div class="product_item-mobile">
@@ -162,7 +164,7 @@
                 <div class="product_item-mobile_content">
                     <h4>Grapefruit Jalapeño</h4>
                     <p>Light and refreshing, this aperitif is a bright blend of citrus with a subtle kick of fresh jalapeño.</p>
-                    <button type="button" class="product_item_btn">SHOP NOW</button>
+                    <button type="button" class="product_item_btn_mobile">SHOP NOW</button>
                 </div>
             </div>
             <div class="product_item-mobile">
@@ -172,7 +174,7 @@
                 <div class="product_item-mobile_content">
                     <h5>Citrus Flower</h5>
                     <p>A fresh Californian take on the apéritif. Made with crisp lemon and subtle elderflower.</p>
-                    <button type="button" class="product_item_btn">SHOP NOW</button>
+                    <button type="button" class="product_item_btn_mobile">SHOP NOW</button>
                 </div>
             </div>
         </div>
@@ -317,5 +319,6 @@
         </div>
     </footer>
     <script src="js/addToCart.js"></script>
+    <!---<script src="js/addAllToCart.js"></script>-->
 </body>
 </html>
