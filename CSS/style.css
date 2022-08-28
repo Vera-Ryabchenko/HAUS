@@ -96,6 +96,10 @@ h1 {
   font-weight: 250;
 }
 
+.main-content p {
+  margin-bottom: 5.92vw;
+}
+
 .main-content_button {
   padding: 1.39vw 3.47vw;
   color: #000;
@@ -104,6 +108,7 @@ h1 {
   margin-top: 5.92vw;
   font-size: 0.83vw;
   line-height: 1.25vw;
+  text-decoration: none;
 }
 
 .main-content_button:hover {
@@ -202,7 +207,8 @@ h5 {
   line-height: 1.94vw;
 }
 
-.product_item_btn {
+.product_item_btn,
+.product_item_btn_mobile {
   padding: 1.39vw 3.47vw;
   color: #fff;
   border: none;
@@ -210,7 +216,27 @@ h5 {
   margin-top: 0.69vw;
 }
 
-.product_item_btn:hover {
+.cartInputMobile,
+.cartInput {
+  border: none;
+  background-color: transparent;
+}
+
+li > .cartInputMobile {
+  display: inline;
+}
+
+.products_btn_mobile,
+.products_btn {
+  border: none;
+  background-color: transparent;
+  font-size: 0.83vw;
+  line-height: 1.25vw;
+}
+
+
+.product_item_btn:hover,
+.product_item_btn_mobile:hover {
   border: 1px solid #000;
   background: transparent;
   transition-duration: 1.5s;
