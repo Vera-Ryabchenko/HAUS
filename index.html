@@ -15,17 +15,19 @@
     <div class="main">
         <nav>
             <div class="nav-left">
-                <p>SHOP</p>
-                <p>MEMBERSHIP</p>
-                <p>OUR STORY</p>
+                <a href="#">SHOP</a>
+                <a href="#">MEMBERSHIP</a>
+                <a href="#">OUR STORY</a>
             </div>
             <div class="nav-logo">
                 <img src="img/logo.svg" alt="logo">
             </div>
             <div class="nav-right">
-                <p>NEWSLETTER</p>
-                <p>ACCOUNT</p>
-                <p>CART <span class="cartInput"></span></p>
+                <a href="#">NEWSLETTER</a>
+                <a href="#">ACCOUNT</a>
+                <div class="cart_link">
+                    <a href="#openModal">CART <a class="cartInput"></a></a>
+                </div>
             </div>
         </nav>
         <div class="main-content">
@@ -52,7 +54,7 @@
                     <a href="#"><li>OUR STORY</li></a>
                     <a href="#"><li>NEWSLETTER</li></a>
                     <a href="#"><li>ACCOUNT</li></a>
-                    <a href="#"><li>CART <span class="cartInputMobile"></span></li></a>
+                    <a href="#openModal"><li>CART <a class="cartInputMobile"></a></li></a>
                 </ul>
             </div>
         </div>
@@ -119,25 +121,25 @@
             <h2>Made with natural ingredients, nothing fake</h2>
             <button type="button" class="products_btn">SHOP ALL FLAVORS</button>
         </div>
-        <div class="products_choice">
-            <div class="product_item">
+        <div class="products_choice" id="products_choice">
+            <!--<div class="product_item" data-id="1">
                 <img src="img/first_product.png" alt="first_product">
                 <h4>The Sampler Kit</h4>
                 <p>Try a variety of Haus flavors with our customizable four-bottle kit. Each bottle serves 2-3 drinks.</p>
                 <button class="product_item_btn">SHOP NOW</button>
             </div>
-            <div class="product_item">
+            <div class="product_item" data-id="2">
                 <img src="img/second_product.png" alt="second_product">
                 <h4>Grapefruit Jalapeño</h4>
                 <p>Light and refreshing, this aperitif is a bright blend of citrus with a subtle kick of fresh jalapeño.</p>
                 <button class="product_item_btn">SHOP NOW</button>
             </div>
-            <div class="product_item">
+            <div class="product_item" data-id="3">
                 <img src="img/third_product.png" alt="third_product">
-                <h5>Citrus Flower</h5>
+                <h4>Citrus Flower</h4>
                 <p>A fresh Californian take on the apéritif. Made with crisp lemon and subtle elderflower.</p>
                 <button class="product_item_btn">SHOP NOW</button>
-            </div>
+            </div>-->
         </div>
     </div>
 
@@ -146,8 +148,8 @@
             <h2>Made with natural ingredients, nothing fake</h2>
             <button type="button" class="products_btn_mobile">SHOP ALL FLAVORS</button>
         </div>
-        <div class="products_choice-mobile">
-            <div class="product_item-mobile">
+        <div class="products_choice-mobile" id="products_choice-mobile">
+            <!--<div class="product_item-mobile">
                 <div class="product_item-mobile_img">
                     <img src="img/first_product.png" alt="first_product">
                 </div>
@@ -172,11 +174,11 @@
                     <img src="img/third_product.png" alt="third_product">
                 </div>
                 <div class="product_item-mobile_content">
-                    <h5>Citrus Flower</h5>
+                    <h4>Citrus Flower</h4>
                     <p>A fresh Californian take on the apéritif. Made with crisp lemon and subtle elderflower.</p>
                     <button type="button" class="product_item_btn_mobile">SHOP NOW</button>
                 </div>
-            </div>
+            </div>-->
         </div>
     </div>
 
@@ -318,7 +320,21 @@
             <a href="#">Terms & Conditions</a>
         </div>
     </footer>
+
+    <div class="modal_window" id="openModal">
+        <div class="cart">
+            <a href="#close" title="Закрыть" class="close">X</a>
+            <h2>Cart</h2>
+      
+            <div id="cart"></div>
+        </div>
+    </div>
+
+    <script src="js/data.js"></script>
     <script src="js/addToCart.js"></script>
-    <!---<script src="js/addAllToCart.js"></script>-->
+    <script src="js/productService.js"></script>
+    <script src="js/HTMLService.js"></script>
+    <script src="js/cartService.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>

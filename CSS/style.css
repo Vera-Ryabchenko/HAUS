@@ -47,6 +47,14 @@ body {
   color: #fff;
 }
 
+.nav-left a,
+.nav-right a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0;
+  text-align: center;
+}
+
 .main .main-content {
   align-self: flex-end;
 }
@@ -63,6 +71,7 @@ nav {
 .nav-right {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 30%;
   margin: 0;
 }
@@ -218,8 +227,8 @@ h5 {
 
 .cartInputMobile,
 .cartInput {
-  border: none;
-  background-color: transparent;
+  text-decoration: none;
+  color: #fff;
 }
 
 li > .cartInputMobile {
@@ -511,12 +520,109 @@ h6 {
   margin-right: 4%;
 }
 
+.modal_window {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 99999;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  display: none;
+  pointer-events: none;
+}
+
+.modal_window:target {
+  display: block;
+  pointer-events: auto;
+}
+
+.modal_window h2 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal_window > div {
+  width: 30vw;
+  position: relative;
+  margin: 10% auto;
+  padding: 2%;
+  border-radius: 20px;
+  background: #fff;
+  /*background: -moz-linear-gradient(#fff, #999);
+  background: -webkit-linear-gradient(#fff, #999);
+  background: -o-linear-gradient(#fff, #999);*/
+}
+
+.close {
+  background: #996b60;
+  color: #FFFFFF;
+  line-height: 25px;
+  position: absolute;
+  right: -12px;
+  text-align: center;
+  top: -10px;
+  width: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  -moz-box-shadow: 1px 1px 3px #000;
+  -webkit-box-shadow: 1px 1px 3px #000;
+  box-shadow: 1px 1px 3px #000;
+  padding: 1%
+}
+   
+.close:hover { background: #996b60; }
+
+.cart-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info span {
+  margin: 5% 0
+}
+
+.info button {
+  display: block;
+  font-size: 1vw;
+  color: #fff;
+  padding: 3% 5%;
+  border: none;
+  border-radius: 15px;
+  background-color: #000;
+  opacity: 0.8;
+}
+
 @media (max-width: 769px) {
   nav,
   .main,
   .products,
   .advantages {
     display: none;
+  }
+
+  .modal_window > div {
+    width: 50vw;
+    position: relative;
+    margin: 10% auto;
+    padding: 2%;
+    border-radius: 20px;
+    background: #fff;
+    /*background: -moz-linear-gradient(#fff, #999);
+    background: -webkit-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999);*/
   }
 
   .main_mobile {
@@ -555,6 +661,9 @@ h6 {
     margin: 5%;
     padding: 5%;
     background-color: #996b60;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .navigation {
@@ -914,6 +1023,7 @@ h6 {
   .main-content_button {
     font-size: 14px;
     padding: 5% 15%;
+    padding-bottom: 5%;
   }
 
   .mobile-content {
@@ -921,6 +1031,13 @@ h6 {
     margin: 5%;
     padding: 5%;
     background-color: #996b60;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mobile-content p {
+    margin-bottom: 5%;
   }
 
   .reviews {
