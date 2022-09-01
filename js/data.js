@@ -1,7 +1,7 @@
 const data = [
     {
         id: 1,
-        image: url = '../img/first_product.png',
+        image: url = 'img/first_product.png',
         title: 'The Sampler Kit',
         description: 'Try a variety of Haus flavors with our customizable four-bottle kit. Each bottle serves 2-3 drinks.',
         price: 100
