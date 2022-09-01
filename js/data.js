@@ -9,7 +9,7 @@ const data = [
 
     {
         id: 2,
-        image: url = '../img/second_product.png',
+        image: url = '/img/second_product.png',
         title: 'Grapefruit Jalapeño',
         description: 'Light and refreshing, this aperitif is a bright blend of citrus with a subtle kick of fresh jalapeño.',
         price: 200
