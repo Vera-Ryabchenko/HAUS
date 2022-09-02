@@ -12,8 +12,8 @@ document.addEventListener('click', event => {
         cartInputMobile.innerHTML = '(' + number2 + ')';
         //alert('Товар успешно добавлен')
     } else if (window.screen.width > 768 && event.target.classList.contains('clear')) {
-            number = 1
-            cartInput.innerHTML = '';
+        number = 1
+        cartInput.innerHTML = '';
     } else if (window.screen.width <= 768 && event.target.classList.contains('clear')) {
         number = 1
         cartInputMobile.innerHTML = '';
