@@ -57,7 +57,7 @@ class HTMLService {
             <hr />
             <div class="info">
                 <span>Общая цена: <strong>$${totalPrice.toFixed(2)}</strong></span>
-                <button class="clear" data-type="clear">Очистить корзину</button>
+                <button class="clear" data-type="clear">Empty the trash</button>
             </div>
         `
     }
