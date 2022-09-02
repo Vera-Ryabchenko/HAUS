@@ -606,6 +606,28 @@ h6 {
   opacity: 0.8;
 }
 
+.up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  font-weight: bold;
+  width: 50px;
+  height: 50px;
+  background-color:#996b60;
+  border-radius: 100%;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: 0 5% 2% 5%
+}
+
+.up a {
+  color: #000;
+  text-decoration: none;
+  margin: 0%;
+}
+
 @media (max-width: 769px) {
   nav,
   .main,
