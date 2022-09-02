@@ -220,7 +220,7 @@ h5 {
 .product_item_btn_mobile {
   padding: 1.39vw 3.47vw;
   color: #fff;
-  border: none;
+  border: 1px solid #fff;
   background-color: #000;
   margin-top: 0.69vw;
 }
@@ -398,6 +398,7 @@ cite {
   padding: 1.04vw 3.47vw;
   font-size: 0.83vw;
   line-height: 0.97vw;
+  border: 1px solid #000;
 }
 
 .mood_content button:hover {
